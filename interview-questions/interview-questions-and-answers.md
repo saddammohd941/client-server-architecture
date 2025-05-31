@@ -351,3 +351,356 @@
 * **Explanation:** Clients don't need to know server IPs — discovery abstracts that.
 
 ---
+
+### 🔸 **51. What is middleware’s role in client-server architecture?**
+
+* **Answer:** Middleware acts as a communication layer that facilitates interaction between client and server applications.
+* **Explanation:** It can handle data translation, message queuing, and service orchestration.
+
+---
+
+### 🔸 **52. What is the difference between thick and thin clients?**
+
+* **Answer:** Thick clients handle more processing locally; thin clients depend mostly on the server for processing.
+* **Explanation:** Thick clients can work offline better but require more resources.
+
+---
+
+### 🔸 **53. What is a stateful server?**
+
+* **Answer:** A server that keeps track of client session information across multiple requests.
+* **Explanation:** Useful for applications requiring session persistence but harder to scale.
+
+---
+
+### 🔸 **54. How does session persistence (sticky sessions) affect scalability?**
+
+* **Answer:** It limits load balancing flexibility since clients must always connect to the same server.
+* **Explanation:** This can cause uneven load distribution.
+
+---
+
+### 🔸 **55. What’s the purpose of load balancers in client-server systems?**
+
+* **Answer:** To distribute incoming client requests evenly across multiple servers.
+* **Explanation:** Ensures no single server becomes a bottleneck.
+
+---
+
+### 🔸 **56. How does DNS help in client-server communication?**
+
+* **Answer:** DNS translates human-readable hostnames into IP addresses so clients can locate servers.
+* **Explanation:** Without DNS, clients would need to know numeric IPs.
+
+---
+
+### 🔸 **57. What is the difference between synchronous and asynchronous communication?**
+
+* **Answer:** Synchronous requires the client to wait for a server response; asynchronous lets the client continue immediately.
+* **Explanation:** Async is better for responsiveness and scalability.
+
+---
+
+### 🔸 **58. What happens during a client-server handshake?**
+
+* **Answer:** Initial connection setup where client and server agree on communication parameters and authentication.
+* **Explanation:** Examples include TCP’s three-way handshake or TLS negotiation.
+
+---
+
+### 🔸 **59. What is Remote Procedure Call (RPC)?**
+
+* **Answer:** A protocol that allows a program to execute procedures on a remote server as if they were local.
+* **Explanation:** Simplifies remote interactions.
+
+---
+
+### 🔸 **60. What are the pros and cons of TCP vs UDP in client-server apps?**
+
+* **Answer:** TCP is reliable and ordered; UDP is faster but unreliable.
+* **Explanation:** Use TCP for data integrity, UDP for speed-sensitive apps like video streaming.
+
+---
+
+### 🔸 **61. What is an API Gateway’s role?**
+
+* **Answer:** It acts as a single entry point, managing authentication, routing, and throttling for API calls.
+* **Explanation:** Simplifies client interaction with complex backend services.
+
+---
+
+### 🔸 **62. What does scalability mean in client-server systems?**
+
+* **Answer:** The ability to handle increased load by adding resources.
+* **Explanation:** Achieved by scaling vertically (stronger server) or horizontally (more servers).
+
+---
+
+### 🔸 **63. What is multi-tier architecture?**
+
+* **Answer:** A design dividing client-server functions into layers like presentation, logic, and data storage.
+* **Explanation:** Improves separation of concerns and maintainability.
+
+---
+
+### 🔸 **64. What’s the difference between polling and push?**
+
+* **Answer:** Polling clients repeatedly check for updates; push servers send updates when available.
+* **Explanation:** Push is more efficient for real-time data.
+
+---
+
+### 🔸 **65. How do cookies help maintain client-server state?**
+
+* **Answer:** They store small pieces of data on the client to track sessions and preferences.
+* **Explanation:** Essential for session continuity in HTTP’s stateless protocol.
+
+---
+
+### 🔸 **66. Why are stateless servers easier to scale?**
+
+* **Answer:** They don’t keep client data, so any server can handle any request.
+* **Explanation:** Simplifies load balancing and failure recovery.
+
+---
+
+### 🔸 **67. What is HTTPS and why is it important?**
+
+* **Answer:** HTTPS encrypts HTTP traffic using SSL/TLS to secure data.
+* **Explanation:** Prevents eavesdropping and data tampering.
+
+---
+
+### 🔸 **68. How do WebSockets improve client-server communication?**
+
+* **Answer:** They establish full-duplex, persistent connections allowing real-time data exchange.
+* **Explanation:** Useful for chat apps, live updates, gaming.
+
+---
+
+### 🔸 **69. What is service discovery in client-server systems?**
+
+* **Answer:** Automatic detection and connection to available services.
+* **Explanation:** Crucial for dynamic environments like microservices.
+
+---
+
+### 🔸 **70. How does caching enhance client-server performance?**
+
+* **Answer:** By storing copies of frequently accessed data closer to clients or servers.
+* **Explanation:** Reduces latency and server load.
+
+---
+
+### 🔸 **71. What is throttling in server management?**
+
+* **Answer:** Limiting the rate of requests to prevent abuse or overload.
+* **Explanation:** Protects server stability and fair resource distribution.
+
+---
+
+### 🔸 **72. What is a proxy server?**
+
+* **Answer:** An intermediary that forwards requests from clients to servers.
+* **Explanation:** Can provide anonymity, caching, or filtering.
+
+---
+
+### 🔸 **73. How do RESTful APIs work in client-server?**
+
+* **Answer:** REST uses stateless HTTP methods to manipulate resources via URLs.
+* **Explanation:** Encourages scalability and simplicity.
+
+---
+
+### 🔸 **74. How does SOAP differ from REST?**
+
+* **Answer:** SOAP is protocol-heavy with XML envelopes; REST is lightweight, using standard HTTP.
+* **Explanation:** SOAP suits enterprise needs; REST suits web services.
+
+---
+
+### 🔸 **75. What is failover?**
+
+* **Answer:** Automatically switching to backup servers on failure.
+* **Explanation:** Ensures continuous service availability.
+
+---
+
+### 🔸 **76. How do firewalls affect client-server communication?**
+
+* **Answer:** Firewalls block or allow traffic based on security policies.
+* **Explanation:** Can restrict access and protect from attacks.
+
+---
+
+### 🔸 **77. What are sockets in networking?**
+
+* **Answer:** Endpoints for sending and receiving data over networks.
+* **Explanation:** Abstract communication details for apps.
+
+---
+
+### 🔸 **78. What is a port?**
+
+* **Answer:** A numeric identifier for services on a server.
+* **Explanation:** Allows multiple services on one IP.
+
+---
+
+### 🔸 **79. What are heartbeat messages?**
+
+* **Answer:** Regular signals to check if a connection or service is alive.
+* **Explanation:** Helps detect failures quickly.
+
+---
+
+### 🔸 **80. How does peer-to-peer differ from client-server?**
+
+* **Answer:** P2P is decentralized; clients and servers are the same nodes.
+* **Explanation:** Good for resource sharing, but less centralized control.
+
+---
+
+### 🔸 **81. How to secure client-server communication?**
+
+* **Answer:** Use encryption (TLS/SSL), authentication, and authorization.
+* **Explanation:** Protects data confidentiality and access control.
+
+---
+
+### 🔸 **82. What is NAT and its impact on client-server?**
+
+* **Answer:** NAT maps private IPs to a public IP, hiding internal networks.
+* **Explanation:** May complicate direct server access.
+
+---
+
+### 🔸 **83. How do firewalls and NAT affect server accessibility?**
+
+* **Answer:** Firewalls filter traffic; NAT hides addresses, requiring port forwarding for access.
+* **Explanation:** Important for hosting services behind routers.
+
+---
+
+### 🔸 **84. What are SSL certificates?**
+
+* **Answer:** Digital certificates that verify server identity and enable encryption.
+* **Explanation:** Builds trust between client and server.
+
+---
+
+### 🔸 **85. What is a reverse proxy?**
+
+* **Answer:** A proxy that forwards requests from clients to backend servers.
+* **Explanation:** Used for load balancing, SSL termination, caching.
+
+---
+
+### 🔸 **86. How does client-server differ in cloud environments?**
+
+* **Answer:** Servers are virtualized and scalable on-demand.
+* **Explanation:** Enables elasticity and resilience.
+
+---
+
+### 🔸 **87. What is microservices architecture?**
+
+* **Answer:** A collection of small, independent services communicating over networks.
+* **Explanation:** Improves modularity and scalability.
+
+---
+
+### 🔸 **88. What is API rate limiting?**
+
+* **Answer:** Controlling the number of API calls clients can make in a time frame.
+* **Explanation:** Prevents abuse and ensures fair usage.
+
+---
+
+### 🔸 **89. What is a load balancer health check?**
+
+* **Answer:** Monitoring backend servers to route traffic only to healthy instances.
+* **Explanation:** Maintains service reliability.
+
+---
+
+### 🔸 **90. What is a Content Delivery Network (CDN)?**
+
+* **Answer:** Distributed servers that cache and serve content closer to users.
+* **Explanation:** Reduces latency and server load.
+
+---
+
+### 🔸 **91. What is a socket timeout?**
+
+* **Answer:** The time a socket waits for data before closing.
+* **Explanation:** Prevents hanging connections.
+
+---
+
+### 🔸 **92. What is a handshake protocol?**
+
+* **Answer:** The initial negotiation to establish communication parameters.
+* **Explanation:** Ensures secure, agreed-upon communication.
+
+---
+
+### 🔸 **93. How to handle concurrency in client-server apps?**
+
+* **Answer:** Use threads, async I/O, or event loops to serve multiple clients simultaneously.
+* **Explanation:** Increases throughput and responsiveness.
+
+---
+
+### 🔸 **94. What is a middleware queue?**
+
+* **Answer:** A message queue that decouples client and server for asynchronous processing.
+* **Explanation:** Improves reliability and scalability.
+
+---
+
+### 🔸 **95. What are WebSockets vs HTTP requests?**
+
+* **Answer:** WebSockets provide persistent full-duplex connections; HTTP is request-response.
+* **Explanation:** WebSockets better for real-time apps.
+
+---
+
+### 🔸 **96. What is a service mesh?**
+
+* **Answer:** Infrastructure layer managing service-to-service communication in microservices.
+* **Explanation:** Handles routing, security, and observability.
+
+---
+
+### 🔸 **97. What is latency in client-server communication?**
+
+* **Answer:** Delay between sending a request and receiving a response.
+* **Explanation:** Lower latency means faster user experience.
+
+---
+
+### 🔸 **98. How do asynchronous APIs benefit clients?**
+
+* **Answer:** Clients don’t wait for server response and can continue other work.
+*
+
+
+**Explanation:** Improves UI responsiveness.
+
+---
+
+### 🔸 **99. What is an edge server?**
+
+* **Answer:** Server located close to clients to deliver faster content.
+* **Explanation:** Often part of a CDN.
+
+---
+
+### 🔸 **100. How do you monitor a client-server system?**
+
+* **Answer:** Using logging, metrics, alerts, and tracing tools like Prometheus or ELK stack.
+* **Explanation:** Helps detect issues and optimize performance.
+
+---
