@@ -684,10 +684,7 @@
 ### 🔸 **98. How do asynchronous APIs benefit clients?**
 
 * **Answer:** Clients don’t wait for server response and can continue other work.
-*
-
-
-**Explanation:** Improves UI responsiveness.
+* **Explanation:** Improves UI responsiveness.
 
 ---
 
